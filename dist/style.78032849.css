@@ -1,0 +1,218 @@
+body {
+    overflow-y: auto;
+  }
+  .container {
+    padding-top: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+ 
+  .movies {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 50px 0;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .border-dotted {
+    border-radius: 10px;
+    border: 3px dotted #ccc;
+  }
+  .movie {
+    --size: 200px;
+    width: var(--size);
+    height: calc(var(--size) * 3 / 2);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  .movie:hover {
+    border: 4px solid orange;
+  }
+  .movie-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .movie img {
+    width: 100%;
+  }
+  .movie .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 20px;
+  }
+  .movie .description span {
+    font-size: 14px;
+    color: chartreuse;
+  }
+  .movie .description h1 {
+    padding: 0 10px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .movie .no-poster {
+    color: black;
+    font-weight: 700;
+    display: flex;
+    width: 40%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 30% auto;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.3;
+  }
+ 
+  /* more 버튼디자인 */
+  .actions {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+ 
+  #btnMore {
+    margin: 50px;
+  }
+ 
+  .red {
+    border: 2px solid red;
+  }
+  .number-select,
+  .genre-select {
+    cursor: pointer;
+  }
+ 
+  /* 무비디테일즈 스켈레톤  */
+  .skeletons {
+    display: flex;
+  }
+ 
+  .skeletons .poster {
+    width: 500px;
+    height: 500px * 3 / 2;
+    margin-right: 70px;
+    flex-shrink: 0;
+  }
+  .skeletons .specs {
+    flex-grow: 1;
+  }
+  .skeletons .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .skeletons .skeleton {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .skeletons .skeleton.title {
+    width: 80%;
+    height: 70px;
+  }
+  .skeletons .skeleton.spec {
+    width: 60%;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .skeletons .skeleton.plot {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+  .skeletons .skeleton.etc {
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+  }
+ 
+  /* 무비디테일즈 스타일 */
+  .movie-details {
+    color: #333;
+  }
+  .movie-details .poster {
+    flex-shrink: 0;
+    width: 500px;
+    height: 500px * 3 / 2;
+    margin-right: 70px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .movie-details .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .movie-details .poster img.no-poster {
+    width: 100px;
+    height: 100px;
+  }
+  .movie-details .specs {
+    flex-grow: 1;
+  }
+  .movie-details .specs .title {
+    color: black;
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+  .movie-details .specs .labels {
+    color: orange;
+  }
+  .movie-details .specs .labels span {
+  }
+  .movie-details .specs .labels span::after {
+    content: "\00b7";
+    margin: 0 6px;
+  }
+  .movie-details .specs .labels span:last-child:after {
+    display: none;
+  }
+ 
+  .movie-details .specs .plot {
+    margin-top: 20px;
+  }
+  .movie-details .specs .ratings {
+  }
+  .movie-details .specs .ratings .rate-lists {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .movie-details .specs .ratings img {
+    height: 30px;
+  }
+  .movie-details .specs .ratings img {
+  }
+  .movie-details .specs h3 {
+    margin: 24px 0 6px;
+    font-size: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .scroll-spy {
+    height: 100px;
+  }
+
+/*# sourceMappingURL=/style.78032849.css.map */
