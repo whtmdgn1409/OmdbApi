@@ -551,7 +551,7 @@
   },
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "CI= parcel build index.html"
   },
   "repository": {
     "type": "git",
